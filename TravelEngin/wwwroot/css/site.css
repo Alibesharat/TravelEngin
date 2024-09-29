@@ -1,0 +1,152 @@
+.collection
+{
+    border: none;
+    margin: 0;
+    padding-left: 1px;
+}
+.nav
+{
+    border-radius: 0;
+}
+
+
+
+.wizard {
+    
+    overflow: hidden;
+}
+
+.step {
+    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.step.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step.exiting {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8af006;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a1b300;
+}
+
+button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+input, textarea, select { font-family:inherit; color: whitesmoke}
+
+.gray-color
+{
+    background-color: rgb(250, 250, 250);
+}
+
+.card-action a
+{
+    color: blue !important;
+}
+
+.bronze 
+{
+    background-color: #CD7F32;
+}
+
+.silver
+{
+    background-color: #C0C0C0;
+}
+
+.gold{
+    background-color: #FFD700;
+}
+.details li 
+{
+    font-size: small;
+    justify-content:first baseline;
+    text-align: right;
+    margin-right: -5px;
+    padding-right: -5px;
+}
+
+.details li strong
+{
+    font-weight: bold;
+}
+
+
+.details li::before {
+    content: "    ✔   "; /* Unicode character for a checkmark */
+    color: green;  /* You can change the color if needed */
+  }
+  .details li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; /* Thickness of the line */
+    background-color: #cccccc27; /* Color of the line */
+    margin-top: 10px; /* Space between the text and the line */
+    margin-bottom: 10px; /* Space between the text and the line */
+
+  }
+
+  .linkIcon li::before
+  {
+     content: " 🌐 ";
+     color: white !important;
+  }
+
+
+
+  
+  .pricing-header
+  {
+    background-color: rgba(245, 245, 245, 0.247);
+    padding: 5px;
+  }
+
+  nav ul li 
+  {
+    float: right !important;
+  }
+
+  .btn-long
+  {
+    width: 250px;
+  }
+
+  .card .card-content
+  {
+    padding: 7px !important;
+  }
+
+  .btn-floating.halfway-fab {
+    position: absolute;
+    right: 24px;
+    bottom: 13px;
+}
+
+.highlight
+{
+    font-weight: bolder;
+    text-shadow: -2px 5px 9px rgba(128, 124, 0, 0.82);
+
+}

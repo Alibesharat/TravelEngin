@@ -1,0 +1,43 @@
+﻿
+@using DNTPersianUtils.Core
+@{
+    ViewData["Title"] = "پیام سیستم";
+
+}
+
+ <div class="row">
+    </br></br>
+        
+        <div>
+            <div class="col s12 m6 offset-m3">
+                <div class="card  darken-1">
+                    <div class="card-content white-text">
+                        </br>
+                        <span class="card-title center black-text"> پیام سیستم  </span>
+                        <br>
+                        <p class="center black-text"> @ViewBag.message  </p>
+                        <br>
+                        <p>تا لحظاتی دیگر به دیوار منتقل می شوید  اگر نشدید <a href="https://TravelEngin.ir"> اینجا </a> کلیک کنید</p>
+                    </div>
+                      @(await Component.InvokeAsync("FooterNav"))
+                </div>
+            </div>
+        </div>
+
+   
+ </div>
+
+
+ @section Scripts
+ {
+    <script>
+         setTimeout(function() {
+        window.location.href = "https://TravelEngin.ir";
+    }, 5000); // Adjust the delay time (5000 ms = 5 seconds) as needed
+    </script>
+ }
+
+  
+
+    
+
